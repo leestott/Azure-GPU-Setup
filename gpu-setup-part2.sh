@@ -57,19 +57,5 @@ sudo pip install --upgrade pip
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
 
-# run a basic test
-echo > gpu_test.py "
-print '...loaded python test [now attempting to list GPUs]'
-
-from tensorflow.python.client import device_lib
-
-def get_available_gpus():
-    local_device_protos = device_lib.list_local_devices()
-    return [x.name for x in local_device_protos if x.device_type == 'GPU']
-
-get_available_gpus()"
-
-echo "Testing GPU set"
-python gpu_test.py
 echo "Script done"
 
