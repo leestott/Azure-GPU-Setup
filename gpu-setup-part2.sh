@@ -37,6 +37,8 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/e
 export CUDA_HOME=/usr/local/cuda
 '
 
+source $HOME/.bashrc
+
 # create bash_profie
 echo "Creating bash_profile"
 echo > $HOME/.bash_profile '
@@ -54,9 +56,6 @@ sudo pip install --upgrade pip
 # install tensorflow
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
-
-# start a new shell
-exec bash
 
 # run a basic test
 echo > gpu_test.py "
