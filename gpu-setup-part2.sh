@@ -12,18 +12,20 @@ if [ ! -d $SETUP_DIR ]; then
 fi
 cd $SETUP_DIR
 
+# install cudnn
+if [ ! -f "cudnn-8.0-linux-x64-v5.1.tgz" ]; then
+    echo "You need to download cudnn-8.0 manually! Specifically, place it at: $SETUP_DIR/cudnn-8.0-linux-x64-v5.1.tgz"
+    exit
+fi
+
 echo "Installing CUDA toolkit and samples"
 # install cuda toolkit
-if [ ! -f "cuda_8.0.61_375.26_linux-run" ]; then 
+if [ ! -f "cuda_8.0.61_375.26_linux-run" ]; then
 	echo "CUDA installation file not found. Did you run part 1?"
 	exit
 fi
 sudo sh cuda_8.0.61_375.26_linux-run --silent --verbose --driver --toolkit
 
-# install cudnn
-if [ ! -f "cudnn-8.0-linux-x64-v5.1.tgz" ]; then
-	wget https://web.stanford.edu/~jamesh93/tmp/cudnn-8.0-linux-x64-v5.1.tgz
-fi
 echo "Uncompressing cudnn"
 tar xzvf cudnn-8.0-linux-x64-v5.1.tgz
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include/

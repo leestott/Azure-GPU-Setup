@@ -1,7 +1,7 @@
 README
 ======
 
-[1] Run part 1 script. 
+[1] Run part 1 script.
 [2] Wait for the script to complete and the VM to reboot.
-[3] Log in again and run part 2.
-  
+[3] Log in again
+[4] Download cudnn-8.0 from NVIDIA's website and run part 2.
