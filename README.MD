@@ -20,14 +20,14 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 - If all of the previous steps fail, file an Azure support ticket
 
 ## Creating a Microsoft account
-●	You should have received an email to your inbox with an invitation to join the Azure subscription from your Azure Administrator. 
-●	Please follow the instructions using the email address that received this invitation.
+- You should have received an email to your inbox with an invitation to join the Azure subscription from your Azure Administrator. 
+- Please follow the instructions using the email address that received this invitation.
  
 ## Getting started
 ### Logging into Azure portal
-●	Once you have created your account, log in to Azure at: portal.azure.com
-●	After logging in, you should reach the dashboard page.
-●	If you have multiple subscriptions (e.g., you previously signed up for a free one), you must select the name of your institution. by clicking in the top right quarter. If no such option appears please contact your Azure Admin. 
+- Once you have created your account, log in to Azure at: portal.azure.com
+- After logging in, you should reach the dashboard page.
+- If you have multiple subscriptions (e.g., you previously signed up for a free one), you must select the name of your institution. by clicking in the top right quarter. If no such option appears please contact your Azure Admin. 
  
 
 ## Create a VM
