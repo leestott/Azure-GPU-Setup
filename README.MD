@@ -1,22 +1,23 @@
 ## Azure Step-by-Step Setup
 ### Key-Points
 
-●	This guide will walk you through running your code on GPUs in Azure.
+- This guide will walk you through running your code on GPUs in Azure.
 Before we start, it cannot be stressed enough: do not leave the VM running when you are not using it.
-●	The expected time from start to finish is 1-2 hours. The most time consuming part will be downloading and installing NVIDIA drivers, CUDA and Tensorflow.
-FAQ
-●	If your teams have changed and you need to grant/remove access for an individual, follow the directions here: https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator
-●	Do not install updates using: sudo apt-get install --upgrade
-○	This might break the CUDA driver installation if the kernel is updated.
-●	Out of disk space error when unzipping or downloading your dataset. 
-○	Attach a larger disk to your VM. https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-classic-attach-disk
-○	Run df -h to see which disks have free space. 
-○	Store your data to the attached disk. There may be a temporary disk as well; do not store persistent data to it!
-●	Problems connecting (e.g., using SSH) to the VM
-○	Try ping <vm’s ip address>
-○	Try ssh to myth/corn first and then try ssh’ing to the VM from there
-○	Try restarting the VM and/or your local machine
-○	If all of the previous steps fail, file an Azure support ticket
+- The expected time from start to finish is 1-2 hours. The most time consuming part will be downloading and installing NVIDIA drivers, CUDA and Tensorflow.
+
+##FAQ
+- If your teams have changed and you need to grant/remove access for an individual, follow the directions here: https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator
+- Do not install updates using: sudo apt-get install --upgrade
+- This might break the CUDA driver installation if the kernel is updated.
+- Out of disk space error when unzipping or downloading your dataset. 
+- Attach a larger disk to your VM. https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-classic-attach-disk
+- Run df -h to see which disks have free space. 
+- Store your data to the attached disk. There may be a temporary disk as well; do not store persistent data to it!
+- Problems connecting (e.g., using SSH) to the VM
+- Try ping <vm’s ip address>
+- Try ssh to myth/corn first and then try ssh’ing to the VM from there
+- Try restarting the VM and/or your local machine
+- If all of the previous steps fail, file an Azure support ticket
 
 ## Creating a Microsoft account
 ●	You should have received an email to your inbox with an invitation to join the Azure subscription from your Azure Administrator. 
