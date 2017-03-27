@@ -32,7 +32,7 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 
 ## Create a VM
 - Once you are logged in, click on the + on the left. Select Ubuntu Server 16.04 LTS.
-[logo]: images/Azure1.JPG "Azure Portal VM Selection"
+[Azure Portal VM Selection]: http://github.com/leestott/azuregpu/images/Azure1.JPG "Azure Portal VM Selection"
 Here's our logo (hover to see the title text):
 - You will be presented withe VM Image detauls simply Click Create.
 - Fill in the name, user, etc for your VM. You must change the storage type from SSD to HDD. Also, you must use the region that you have been allotted. 
