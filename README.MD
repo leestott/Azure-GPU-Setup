@@ -5,7 +5,7 @@
 Before we start, it cannot be stressed enough: do not leave the VM running when you are not using it.
 - The expected time from start to finish is 1-2 hours. The most time consuming part will be downloading and installing NVIDIA drivers, CUDA and Tensorflow.
 
-##FAQ
+## FAQ
 - If your teams have changed and you need to grant/remove access for an individual, follow the directions here: https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator
 - Do not install updates using: sudo apt-get install --upgrade
 - This might break the CUDA driver installation if the kernel is updated.
