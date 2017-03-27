@@ -1,6 +1,3 @@
-README
-======
-
 ## Azure Step-by-Step Setup
 ### Key-Points
 
@@ -70,7 +67,7 @@ There are two scripts that you will need to run and your VM will need to reboot 
 [4] Download cudnn-8.0 from NVIDIA's website and run part 2.
 
 - First, in your VM do:
-- git clone https://jhong1@bitbucket.org/jhong1/azure-gpu-setup.git
+- git clone https://github.com/leestott/AzureGPU.git
 - cd azure-gpu-setup
 
 - You should see the following if you use ls -all
