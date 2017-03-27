@@ -15,7 +15,7 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 - Store your data to the attached disk. There may be a temporary disk as well; do not store persistent data to it!
 - Problems connecting (e.g., using SSH) to the VM
 - Try ping <vm’s ip address>
-- Try ssh to myth/corn first and then try ssh’ing to the VM from there
+- Try ssh to the VM
 - Try restarting the VM and/or your local machine
 - If all of the previous steps fail, file an Azure support ticket
 
@@ -32,6 +32,8 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 
 ## Create a VM
 - Once you are logged in, click on the + on the left. Select Ubuntu Server 16.04 LTS.
+[logo]: images/Azure1.JPG "Azure Portal VM Selection"
+Here's our logo (hover to see the title text):
 - You will be presented withe VM Image detauls simply Click Create.
 - Fill in the name, user, etc for your VM. You must change the storage type from SSD to HDD. Also, you must use the region that you have been allotted. 
 - View all (click the button) of the options and select NV6 by scrolling through the list. If NV6 does not show up, then you probably chose the wrong region or chose SSD in the previous page. Also, if you do not select NV6 (or any of the NV/NC options), then you are not using a GPU instance and the setup scripts later will fail.
@@ -62,15 +64,10 @@ Once your VM is started (it may take a few minutes). Click connect and follow th
 
 There are two scripts that you will need to run and your VM will need to reboot in the between running them.
 
-[1] Run part 1 script.
-[2] Wait for the script to complete and the VM to reboot.
-[3] Log in again
-[4] Download cudnn-8.0 from NVIDIA's website and run part 2.
-
+##[Step 1]
 - First, in your VM do:
 - git clone https://github.com/leestott/AzureGPU.git
 - cd azure-gpu-setup
-
 - You should see the following if you use 
 ```ls -all```
  
@@ -80,7 +77,11 @@ There are two scripts that you will need to run and your VM will need to reboot 
 
 This will install some libraries, fetch and install NVIDIA drivers, and trigger a reboot. (The command will take some time to run.)
 
-Once your VM has finished restarting. SSH into the VM again. Navigate to the azure-gpu-setup directory again. Run the command:
+Once your VM has finished restarting. 
+
+## [Step 2]
+
+SSH into the VM again. Navigate to the azure-gpu-setup directory again. Run the command:
 	
 ```./gpu-setup-part2.sh```
 
@@ -91,8 +92,6 @@ This script installs the CUDA toolkit, CUDNN, and Tensorflow. It also sets the r
 This ensures that the shell will use the updated environment variables. Now, to test that Tensorflow and the GPU is properly configured, run the gpu test script by executing:
 
 ```python gpu-test.py```
-
-You should see the following if all went well.
  
 
 ## Filing a support ticket
