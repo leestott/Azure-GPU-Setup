@@ -80,7 +80,6 @@ There are two scripts that you will need to run and your VM will need to reboot 
 
 - You should see the following if you use 
 ```ls -all```
-- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure13.JPG)
  
 - Run gpu-setup-part1.sh using the following command:
 
@@ -103,14 +102,14 @@ This script installs the CUDA toolkit, CUDNN, and Tensorflow. It also sets the r
 This ensures that the shell will use the updated environment variables. Now, to test that Tensorflow and the GPU is properly configured, run the gpu test script by executing:
 
 ```python gpu-test.py```
- 
- - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure14.JPG)
+ - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure13.JPG)
+
 
 ## Filing a support ticket
 - Click on the help icon in the left sidebar and select new support request.
-- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure15.JPG)
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure14.JPG)
 - Follow the on screen instructions.
- - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure16.JPG)
+ - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure15.JPG)
 
 ## General recommendations
 We highly suggest the following for using the GPU instances:
