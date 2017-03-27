@@ -71,10 +71,10 @@ There are two scripts that you will need to run and your VM will need to reboot 
 - git clone https://github.com/leestott/AzureGPU.git
 - cd azure-gpu-setup
 
-- You should see the following if you use ls -all
+- You should see the following if you use '''ls -all'''
  
 - Run gpu-setup-part1.sh using the following command:
-	./gpu-setup-part1.sh
+	'''./gpu-setup-part1.sh'''
 
 This will install some libraries, fetch and install NVIDIA drivers, and trigger a reboot. (The command will take some time to run.)
 
@@ -82,10 +82,11 @@ Once your VM has finished restarting. SSH into the VM again. Navigate to the azu
 	./gpu-setup-part2.sh
 
 This script installs the CUDA toolkit, CUDNN, and Tensorflow. It also sets the required environment varibales. Once the script finishes, we must do:
-	source ~/.bashrc
+	
+	'''source ~/.bashrc'''
 
 This ensures that the shell will use the updated environment variables. Now, to test that Tensorflow and the GPU is properly configured, run the gpu test script by executing:
-	python gpu-test.py
+	'''python gpu-test.py'''
 
 You should see the following if all went well.
  
@@ -97,8 +98,8 @@ You should see the following if all went well.
 
 ## General recommendations
 We highly suggest the following for using the GPU instances:
-●	Develop and debug your code locally and use scp to copy your code to the VM to run for the long training steps.
-●	Save your work often and keep a local copy.
-●	Be mindful of when your instance is running and shut it off when you are not actively using it.
+- Develop and debug your code locally and use scp to copy your code to the VM to run for the long training steps.
+- Save your work often and keep a local copy.
+- Be mindful of when your instance is running and shut it off when you are not actively using it.
 
 
