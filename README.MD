@@ -33,29 +33,38 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 ## Create a VM
 - Once you are logged in, click on the + on the left. Select Ubuntu Server 16.04 LTS.
 - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure1.JPG)
-Here's our logo (hover to see the title text):
 - You will be presented withe VM Image detauls simply Click Create.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure2.JPG)
 - Fill in the name, user, etc for your VM. You must change the storage type from SSD to HDD. Also, you must use the region that you have been allotted. 
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure3.JPG)
 - View all (click the button) of the options and select NV6 by scrolling through the list. If NV6 does not show up, then you probably chose the wrong region or chose SSD in the previous page. Also, if you do not select NV6 (or any of the NV/NC options), then you are not using a GPU instance and the setup scripts later will fail.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure4.JPG)
 - Select the appropiate VM Size and Click OK.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure5.JPG)
 - Wait for the configuration to validate and then click OK.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure6.JPG)
  
 
 ## Using the VM
 ### Finding your VM
 Login to http://portal.azure.com Click all resources and select your VM. Our subscription has many, but yours will only have one if you just followed the setup instructions.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure7.JPG)
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure8.JPG)
  
  
 ## Spinning up your VM
 If you just completed the previous part and the VM has finished deploying, then your VM should be running already. 
- 
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure9.JPG) 
 
 ## Connecting (SSH) to your VM
 Once your VM is started (it may take a few minutes). Click connect and follow the instructions.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure10.JPG)
  
 ## Stopping your VM
 - Once you are done working, stop your VM. You must do this or your credits will disappear at a rate of $1+ every hour the VM is on.
 - Make sure your VM is fully stopped. If you see “stopped still incurring compute charges”, you must hit stop again.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure11.JPG)
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure12.JPG)
  
 ## Completing CUDA/Tensorflow setup
 - You will need to SSH into your VM. 
@@ -70,6 +79,7 @@ There are two scripts that you will need to run and your VM will need to reboot 
 - cd azure-gpu-setup
 - You should see the following if you use 
 ```ls -all```
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure13.JPG)
  
 - Run gpu-setup-part1.sh using the following command:
 
@@ -93,11 +103,13 @@ This ensures that the shell will use the updated environment variables. Now, to 
 
 ```python gpu-test.py```
  
+ - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure14.JPG)
 
 ## Filing a support ticket
 - Click on the help icon in the left sidebar and select new support request.
+- ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure15.JPG)
 - Follow the on screen instructions.
- 
+ - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure16.JPG)
 
 ## General recommendations
 We highly suggest the following for using the GPU instances:
