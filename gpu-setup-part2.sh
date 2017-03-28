@@ -55,8 +55,9 @@ sudo apt-get -y install libcupti-dev
 # upgrade pip
 sudo pip install --upgrade pip
 
-# install tensorflow
-export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
+# install tensorflow 1.0
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp27-none-linux_x86_64.whl
+
 sudo pip install --upgrade $TF_BINARY_URL
 
 echo "Script done"
