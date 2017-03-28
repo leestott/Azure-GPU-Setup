@@ -74,7 +74,7 @@ There are two scripts that you will need to run and your VM will need to reboot 
 
 ##[Step 1]
 - First, in your VM do:
-- git clone https://github.com/leestott/AzureGPU.git
+- git clone https://github.com/leestott/Azure-GPU-Setup.git
 - cd azure-gpu-setup
 - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure12.JPG)
 
