@@ -14,7 +14,7 @@ cd $SETUP_DIR
 
 # install cudnn
 if [ ! -f "cudnn-8.0-linux-x64-v5.1.tgz" ]; then
-    echo "You need to download cudnn-8.0 manually! Specifically, place it at: $SETUP_DIR/cudnn-8.0-linux-x64-v5.1.tgz"
+    echo "You need to download cudnn-8.0 manually this can be downloaded from https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v5.1/prod_20161129/8.0/cudnn-8.0-linux-x64-v5.1-tgz you will need to create a NVIDIA Account! Specifically, place it at: $SETUP_DIR/cudnn-8.0-linux-x64-v5.1.tgz"
     exit
 fi
 
