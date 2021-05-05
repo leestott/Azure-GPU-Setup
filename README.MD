@@ -6,11 +6,11 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 - The expected time from start to finish is 1-2 hours. The most time consuming part will be downloading and installing NVIDIA drivers, CUDA and Tensorflow.
 
 ## FAQ
-- If your teams have changed and you need to grant/remove access for an individual, follow the directions here: https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator
+- If your teams have changed and you need to grant/remove access for an individual, follow the directions here: https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator?WT.mc_id=academic-0000-leestott
 - Do not install updates using: sudo apt-get install --upgrade
 - This might break the CUDA driver installation if the kernel is updated.
 - Out of disk space error when unzipping or downloading your dataset. 
-- Attach a larger disk to your VM. https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-classic-attach-disk
+- Attach a larger disk to your VM. https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-classic-attach-disk?WT.mc_id=academic-0000-leestott
 - Run df -h to see which disks have free space. 
 - Store your data to the attached disk. There may be a temporary disk as well; do not store persistent data to it!
 - Problems connecting (e.g., using SSH) to the VM
@@ -47,7 +47,7 @@ Before we start, it cannot be stressed enough: do not leave the VM running when 
 
 ## Using the VM
 ### Finding your VM
-Login to http://portal.azure.com Click all resources and select your VM. Our subscription has many, but yours will only have one if you just followed the setup instructions.
+Login to https://portal.azure.com/?WT.mc_id=academic-0000-leestott Click all resources and select your VM. Our subscription has many, but yours will only have one if you just followed the setup instructions.
 - ![Azure Portal VM Selection](https://github.com/leestott/AzureGPU/blob/master/Images/Azure7.JPG)
  
 ## Spinning up your VM
